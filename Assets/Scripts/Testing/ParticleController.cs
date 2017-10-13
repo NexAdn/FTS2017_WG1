@@ -3,6 +3,7 @@
 public class ParticleController : MonoBehaviour
 {
     public KeyCode triggerKey;
+    public GameObject particleObject;
 
     // Use this for initialization
     void Start()
@@ -16,11 +17,15 @@ public class ParticleController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(triggerKey))
         {
-            GetComponent<ParticleSystem>().Play();
+            //GetComponent<ParticleSystem>().Play();
+            particleObject.SetActive(true);
+            particleObject.GetComponent<ParticleSystem>().Play();
         }
         if (Input.GetKeyUp(KeyCode.KeypadEnter) || Input.GetKeyUp(KeyCode.Return) || Input.GetKeyUp(triggerKey))
         {
-            GetComponent<ParticleSystem>().Stop();
+            //GetComponent<ParticleSystem>().Stop();
+            particleObject.GetComponent<ParticleSystem>().Stop();
+            particleObject.SetActive(false);
         }
     }
 }
