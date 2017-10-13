@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: b783d5a43f242524fbd332c19836ef38
+timeCreated: 1507909318
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: bomb
+    100004: Display
+    100006: Lamp 1
+    100008: Lamp 2
+    100010: Lamp 3
+    100012: Lamp 4
+    100014: Numpad
+    100016: Timer
+    400000: bomb
+    400002: //RootNode
+    400004: Display
+    400006: Lamp 1
+    400008: Lamp 2
+    400010: Lamp 3
+    400012: Lamp 4
+    400014: Numpad
+    400016: Timer
+    2300000: bomb
+    2300002: Display
+    2300004: Lamp 1
+    2300006: Lamp 2
+    2300008: Lamp 3
+    2300010: Lamp 4
+    2300012: Numpad
+    2300014: Timer
+    2300016: //RootNode
+    3300000: bomb
+    3300002: Display
+    3300004: Lamp 1
+    3300006: Lamp 2
+    3300008: Lamp 3
+    3300010: Lamp 4
+    3300012: Numpad
+    3300014: Timer
+    3300016: //RootNode
+    4300000: bomb
+    4300002: Numpad
+    4300004: Display
+    4300006: Timer
+    4300008: Lamp 4
+    4300010: Lamp 2
+    4300012: Lamp 1
+    4300014: Lamp 3
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dynamite
+    second: {fileID: 2100000, guid: ff52c50de3825a84694c70c8c68c8b6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lamps
+    second: {fileID: 2100000, guid: e6b18855b4e99f541a8baf4221ad2a18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 965f785902e02d1409be3bda92adc761, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: fab1fa90b1619bf45965f0926e65b6d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 5c67c6cf507654e4c971c9314508f409, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 38eb33e388ab4d444b65e6a94d0a3c7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NumpadDisplay
+    second: {fileID: 2100000, guid: fca1804617896274298a12f79c8ef2e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tasten
+    second: {fileID: 2100000, guid: 309a45d5330a60d45964cab584771439, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Timer
+    second: {fileID: 2100000, guid: 91b37f17ab2df284ea095d81ff79d04c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
