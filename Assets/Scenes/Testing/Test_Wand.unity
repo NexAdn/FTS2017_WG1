@@ -835,7 +835,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34876726a4fc3654a9a7a79e29f0a24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BreakWall: {fileID: 0}
   PickMoveSpeed: -0.01
 --- !u!54 &1516971156
 Rigidbody:
@@ -887,7 +886,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1692005806}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.21, y: -0.059255123, z: 0.6515112}
+  m_LocalPosition: {x: 0.925, y: -0.059255123, z: -0.325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059857528}
@@ -1087,7 +1086,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1935581067}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.38482916, y: 8.36, z: 0.39838874}
+  m_LocalPosition: {x: 1.29, y: 8.36, z: 0.39838874}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1303,7 +1302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce25e9e865c4904aa4ea4e434771515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthLevel: 4
+  HealthLevel: 3
 --- !u!54 &2131459425
 Rigidbody:
   m_ObjectHideFlags: 0

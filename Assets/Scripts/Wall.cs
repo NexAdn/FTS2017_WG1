@@ -2,7 +2,7 @@
 
 public class Wall : MonoBehaviour
 {
-    public int HealthLevel = 4;
+    public int HealthLevel = 3;
 
     public void OnTriggerEnter(Collider collider)
     {
@@ -11,6 +11,7 @@ public class Wall : MonoBehaviour
             var axeRigidbody = collider.gameObject.GetComponent<Rigidbody>();
 
             Damage(axeRigidbody.velocity.magnitude);
+           
        }
     }
 
@@ -32,4 +33,4 @@ public class Wall : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-}
+} 
