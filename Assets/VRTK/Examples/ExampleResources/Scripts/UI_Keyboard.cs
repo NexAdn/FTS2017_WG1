@@ -7,11 +7,13 @@
     {
         //private InputField input;
 
-        public GameObject go;
+        public GameObject TopWallText;
+        public GameObject RoomLight;
         public void Enter()
         {
             //input.text = "";
-            go.SetActive(!go.activeSelf);
+            TopWallText.SetActive(!TopWallText.activeSelf);
+            RoomLight.SetActive(!TopWallText.activeSelf);
         }
 
         private void Start()
