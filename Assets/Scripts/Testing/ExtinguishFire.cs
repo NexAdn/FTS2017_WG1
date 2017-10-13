@@ -4,34 +4,34 @@ using UnityEngine;
 
 public class ExtinguishFire : MonoBehaviour {
 
-    public int Timer = 1000;
-    public GameObject fire;
+    public float Timer = 3f;
+    public GameObject flame;
+    public GameObject fireMain;
 
 	// Use this for initialization
 	void Start () {
-		
+        Debug.Log("init");
 	}
-	
-	// Update is called once per frame
-	/*void Update () {
+
+    // Update is called once per frame
+    /*void Update () {
 		
 	}*/
 
-    public void OnTriggerEnter (Collider coll)
-    {
-        Debug.Log("trigger");
-    }
 
-    public void OnParticleCollision (GameObject other)
+
+    public void OnTriggerStay (Collider coll)
     {
-        Debug.Log("collision");
-        if (other == fire)
+        if (coll.gameObject == flame)
         {
+            Timer -= Time.deltaTime;
             Debug.Log(Timer);
-            if (--Timer == 0)
-            {
-                fire.SetActive(false);
-            }
+        }
+
+        if (Timer <= 0)
+        {
+            flame.GetComponent<ParticleSystem>().Stop();
+            fireMain.GetComponent<ParticleSystem>().Stop();
         }
     }
 }
