@@ -7,7 +7,8 @@ TagManager:
   - FxTemporaire
   - projectile
   - TeleportIgnore
-  - pickaxe
+  - BreakWall
+  - Axe
   layers:
   - Default
   - TransparentFX
