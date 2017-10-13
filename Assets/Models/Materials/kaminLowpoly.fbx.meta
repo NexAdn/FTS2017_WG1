@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: f28f4e87bc5ab37499b0997b918e3523
-timeCreated: 1507900134
+guid: 26b613d4dbe4df14ca4ac357e31af1ef
+timeCreated: 1507902310
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -10,56 +10,44 @@ ModelImporter:
     100004: Cube
     100006: Cube.001
     100008: Cube.002
-    100010: Cube_MeshPart0
-    100012: Cube_MeshPart1
-    100014: Cube_MeshPart2
-    100016: //RootNode
-    100018: Plane
-    100020: roof
+    100010: //RootNode
+    100012: Plane
+    100014: roof
     400000: back
     400002: Circle
     400004: Cube
     400006: Cube.001
     400008: Cube.002
-    400010: Cube_MeshPart0
-    400012: Cube_MeshPart1
-    400014: Cube_MeshPart2
-    400016: //RootNode
-    400018: Plane
-    400020: roof
+    400010: //RootNode
+    400012: Plane
+    400014: roof
     2300000: back
     2300002: Circle
-    2300004: Cube.001
-    2300006: Cube.002
-    2300008: Cube_MeshPart0
-    2300010: Cube_MeshPart1
-    2300012: Cube_MeshPart2
-    2300014: Plane
-    2300016: roof
+    2300004: Cube
+    2300006: Cube.001
+    2300008: Cube.002
+    2300010: Plane
+    2300012: roof
     3300000: back
     3300002: Circle
-    3300004: Cube.001
-    3300006: Cube.002
-    3300008: Cube_MeshPart0
-    3300010: Cube_MeshPart1
-    3300012: Cube_MeshPart2
-    3300014: Plane
-    3300016: roof
-    4300000: Cube_MeshPart0
-    4300002: Cube_MeshPart1
-    4300004: Cube_MeshPart2
-    4300006: Circle
-    4300008: Cube.001
-    4300010: roof
-    4300012: Cube.002
-    4300014: back
-    4300016: Plane
+    3300004: Cube
+    3300006: Cube.001
+    3300008: Cube.002
+    3300010: Plane
+    3300012: roof
+    4300000: Cube
+    4300002: Circle
+    4300004: Cube.001
+    4300006: roof
+    4300008: Cube.002
+    4300010: back
+    4300012: Plane
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: e8aa1d287d5892f4b9b3597b82e4e95a, type: 2}
+    second: {fileID: 2100000, guid: 407cd6de2b8274a46ab992f8529a1a99, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
