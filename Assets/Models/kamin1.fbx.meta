@@ -1,43 +1,65 @@
 fileFormatVersion: 2
-guid: 62465be969a47b144a82f209cbf1d10f
-timeCreated: 1507897183
+guid: 14216443ed840ab4e924000009fc2d79
+timeCreated: 1507899652
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: back
-    100002: Cube.001
-    100004: Cube.002
-    100006: //RootNode
-    100008: Plane
-    100010: roof
+    100002: Circle
+    100004: Cube
+    100006: Cube.001
+    100008: Cube.002
+    100010: Cube_MeshPart0
+    100012: Cube_MeshPart1
+    100014: Cube_MeshPart2
+    100016: //RootNode
+    100018: Plane
+    100020: roof
     400000: back
-    400002: Cube.001
-    400004: Cube.002
-    400006: //RootNode
-    400008: Plane
-    400010: roof
+    400002: Circle
+    400004: Cube
+    400006: Cube.001
+    400008: Cube.002
+    400010: Cube_MeshPart0
+    400012: Cube_MeshPart1
+    400014: Cube_MeshPart2
+    400016: //RootNode
+    400018: Plane
+    400020: roof
     2300000: back
-    2300002: Cube.001
-    2300004: Cube.002
-    2300006: Plane
-    2300008: roof
+    2300002: Circle
+    2300004: Cube.001
+    2300006: Cube.002
+    2300008: Cube_MeshPart0
+    2300010: Cube_MeshPart1
+    2300012: Cube_MeshPart2
+    2300014: Plane
+    2300016: roof
     3300000: back
-    3300002: Cube.001
-    3300004: Cube.002
-    3300006: Plane
-    3300008: roof
-    4300000: Cube.001
-    4300002: roof
-    4300004: Cube.002
-    4300006: back
-    4300008: Plane
+    3300002: Circle
+    3300004: Cube.001
+    3300006: Cube.002
+    3300008: Cube_MeshPart0
+    3300010: Cube_MeshPart1
+    3300012: Cube_MeshPart2
+    3300014: Plane
+    3300016: roof
+    4300000: Cube_MeshPart0
+    4300002: Cube_MeshPart1
+    4300004: Cube_MeshPart2
+    4300006: Circle
+    4300008: Cube.001
+    4300010: roof
+    4300012: Cube.002
+    4300014: back
+    4300016: Plane
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: dd379681c6092dd4d9d3964ec8d18f8b, type: 2}
+    second: {fileID: 2100000, guid: e8aa1d287d5892f4b9b3597b82e4e95a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
