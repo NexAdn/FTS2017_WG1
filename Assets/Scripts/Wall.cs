@@ -3,7 +3,7 @@
 public class Wall : MonoBehaviour
 {
     public int HealthLevel = 3;
-
+    public GameObject WallParticles;
     public void OnTriggerEnter(Collider collider)
     {
        if (collider.tag == "Axe")
@@ -31,6 +31,9 @@ public class Wall : MonoBehaviour
         } else
         {
             gameObject.SetActive(false);
+            WallParticles.GetComponent<ParticleSystem>().Play();
+           
         }
     }
+    
 } 
