@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class Bomb : MonoBehaviour {
 
+    public GameObject WinScreen;
+    public GameObject LoseScreen;
+
+
     public float TimeTillExplosion;
     public float TimePunishment;
     public Text TimerLabel;
@@ -54,6 +58,7 @@ public class Bomb : MonoBehaviour {
             {
                 TimerLabel.text = "00:00";
                 InterruptTimer();
+                LoseScreen.SetActive(true);
                 // Verloren
             }
         }
@@ -154,9 +159,11 @@ public class Bomb : MonoBehaviour {
         {
             MatD.color = Color.green;
         }
-        if (activatedCodes == (0x08|0x04|0x02|0x01))
+        if (activatedCodes == (0x08 | 0x04 | 0x02 | 0x01))
         {
             InterruptTimer();
+            Time.timeScale = 0;
+            WinScreen.SetActive(true);
             // Gewonnen
         }
     }
