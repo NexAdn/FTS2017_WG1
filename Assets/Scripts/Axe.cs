@@ -1,25 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Axe : MonoBehaviour
-{ 
-    
-    public float PickMoveSpeed;
+{
+    [HideInInspector]
+    public float speed = 0f;
 
-    private Vector3 orgPosition;
-    private void Start()
+    private Vector3 lastPosition;
+
+    void Start()
     {
-        orgPosition = transform.position;
+        lastPosition = transform.position;
     }
 
     public void Update()
     {
-        transform.position = transform.position + new Vector3(PickMoveSpeed, 0, 0);
+        speed = Vector3.Distance(transform.position, lastPosition);
 
-        if (transform.position.x < -0.5f)
-        {
-            transform.position = orgPosition;
-        }
+        lastPosition = transform.position;
     }
 }
