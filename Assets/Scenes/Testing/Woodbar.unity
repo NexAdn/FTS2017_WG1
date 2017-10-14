@@ -201,6 +201,10 @@ Prefab:
       propertyPath: m_Name
       value: wood1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: cbf90422de8cd4949ba509f3f6ae4a93, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 791ef247ea4b52a49940ddef8451f9ac, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbf90422de8cd4949ba509f3f6ae4a93, type: 3}
   m_IsPrefabParent: 0
