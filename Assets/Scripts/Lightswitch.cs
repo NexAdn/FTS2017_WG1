@@ -1,32 +1,29 @@
-﻿namespace VRTK.Examples
+﻿using UnityEngine;
+using UnityEngine.UI;
+
+public class UI_Keyboard : MonoBehaviour
 {
-    using UnityEngine;
-    using UnityEngine.UI;
+    //private InputField input;
 
-    public class UI_Keyboard : MonoBehaviour
+    public GameObject TopWallText;
+    public GameObject RoomLight;
+    public void Enter()
     {
-        //private InputField input;
+        //input.text = "";
+        TopWallText.SetActive(!TopWallText.activeSelf);
+        RoomLight.SetActive(!TopWallText.activeSelf);
+    }
 
-        public GameObject TopWallText;
-        public GameObject RoomLight;
-        public void Enter()
-        {
-            //input.text = "";
-            TopWallText.SetActive(!TopWallText.activeSelf);
-            RoomLight.SetActive(!TopWallText.activeSelf);
-        }
+    private void Start()
+    {
+        //input = GetComponentInChildren<InputField>();
+    }
 
-        private void Start()
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.KeypadEnter) || Input.GetKeyUp(KeyCode.Return))
         {
-            //input = GetComponentInChildren<InputField>();
-        }
-
-        private void Update()
-        {
-            if (Input.GetKeyUp(KeyCode.KeypadEnter) || Input.GetKeyUp(KeyCode.Return))
-            {
-                Enter();
-            }
+            Enter();
         }
     }
 }
