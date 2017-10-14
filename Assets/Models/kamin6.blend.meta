@@ -17,6 +17,15 @@ ModelImporter:
     100018: //RootNode
     100020: Plane
     100022: roof
+    100024: Back
+    100026: Floor
+    100028: Rail
+    100030: Rail_MeshPart0
+    100032: Rail_MeshPart1
+    100034: Rail_MeshPart2
+    100036: Roof
+    100038: Sides
+    100040: Sims
     400000: back
     400002: Circle
     400004: Cube
@@ -29,6 +38,15 @@ ModelImporter:
     400018: //RootNode
     400020: Plane
     400022: roof
+    400024: Back
+    400026: Floor
+    400028: Rail
+    400030: Rail_MeshPart0
+    400032: Rail_MeshPart1
+    400034: Rail_MeshPart2
+    400036: Roof
+    400038: Sides
+    400040: Sims
     2300000: back
     2300002: Circle
     2300004: Cube_001
@@ -39,6 +57,14 @@ ModelImporter:
     2300014: Cube_MeshPart2
     2300016: Plane
     2300018: roof
+    2300020: Back
+    2300022: Floor
+    2300024: Rail_MeshPart0
+    2300026: Rail_MeshPart1
+    2300028: Rail_MeshPart2
+    2300030: Roof
+    2300032: Sides
+    2300034: Sims
     3300000: back
     3300002: Circle
     3300004: Cube_001
@@ -49,6 +75,14 @@ ModelImporter:
     3300014: Cube_MeshPart2
     3300016: Plane
     3300018: roof
+    3300020: Back
+    3300022: Floor
+    3300024: Rail_MeshPart0
+    3300026: Rail_MeshPart1
+    3300028: Rail_MeshPart2
+    3300030: Roof
+    3300032: Sides
+    3300034: Sims
     4300000: Cube_MeshPart0
     4300002: Cube_MeshPart1
     4300004: Cube_MeshPart2
@@ -59,9 +93,57 @@ ModelImporter:
     4300014: Cube_002
     4300016: back
     4300018: Plane
+    4300020: Rail_MeshPart0
+    4300022: Rail_MeshPart1
+    4300024: Rail_MeshPart2
+    4300026: Sims
+    4300028: Roof
+    4300030: Sides
+    4300032: Back
+    4300034: Floor
     7400000: Default Take
     9500000: //RootNode
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: fb2d119f43944344bbd169144e2cb11a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rail
+    second: {fileID: 2100000, guid: c72842b5af0200043ab793d42f6d9060, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof
+    second: {fileID: 2100000, guid: 5bce2a794c4150543b6d48c5ecaa32b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof__brick_oven1_jpg
+    second: {fileID: 2100000, guid: e6b7f721f6818ef489055da7e6f1587d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SideWall
+    second: {fileID: 2100000, guid: 6ddf9d34a0c6d6a458aaf3401b54feb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SideWall__brick_oven1_jpg
+    second: {fileID: 2100000, guid: 520af7c22fe72f24f899588503e19ddf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sides
+    second: {fileID: 2100000, guid: 16d97d0bc6275324fafc2eb4bfb0a5ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sims_Front
+    second: {fileID: 2100000, guid: 0edbed4e64ce259439cc6120fd492d28, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
