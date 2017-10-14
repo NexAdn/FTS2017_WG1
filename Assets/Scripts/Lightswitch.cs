@@ -26,4 +26,13 @@ public class Lightswitch : MonoBehaviour
             Enter();
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Body")
+        {
+            Enter();
+        }
+        
+    }
 }
