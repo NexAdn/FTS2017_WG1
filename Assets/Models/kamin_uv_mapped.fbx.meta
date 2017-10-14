@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: 5844ad68d1c83454492b4159275cd5fc
+timeCreated: 1507967037
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Back
+    100002: Floor
+    100004: //RootNode
+    100006: Rail
+    100008: Rail_MeshPart0
+    100010: Rail_MeshPart1
+    100012: Rail_MeshPart2
+    100014: Roof
+    100016: Sides
+    100018: Sims
+    400000: Back
+    400002: Floor
+    400004: //RootNode
+    400006: Rail
+    400008: Rail_MeshPart0
+    400010: Rail_MeshPart1
+    400012: Rail_MeshPart2
+    400014: Roof
+    400016: Sides
+    400018: Sims
+    2300000: Back
+    2300002: Floor
+    2300004: Rail_MeshPart0
+    2300006: Rail_MeshPart1
+    2300008: Rail_MeshPart2
+    2300010: Roof
+    2300012: Sides
+    2300014: Sims
+    3300000: Back
+    3300002: Floor
+    3300004: Rail_MeshPart0
+    3300006: Rail_MeshPart1
+    3300008: Rail_MeshPart2
+    3300010: Roof
+    3300012: Sides
+    3300014: Sims
+    4300000: Rail_MeshPart0
+    4300002: Rail_MeshPart1
+    4300004: Rail_MeshPart2
+    4300006: Sims
+    4300008: Roof
+    4300010: Sides
+    4300012: Back
+    4300014: Floor
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: fb2d119f43944344bbd169144e2cb11a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rail
+    second: {fileID: 2100000, guid: c72842b5af0200043ab793d42f6d9060, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof
+    second: {fileID: 2100000, guid: 5bce2a794c4150543b6d48c5ecaa32b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SideWall
+    second: {fileID: 2100000, guid: 7eaf44635d78a994db5d0633b5e524f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sides
+    second: {fileID: 2100000, guid: 16d97d0bc6275324fafc2eb4bfb0a5ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sims.Front
+    second: {fileID: 2100000, guid: a4ac20f343f67ae4580d8f72893d717d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

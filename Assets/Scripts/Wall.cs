@@ -8,27 +8,24 @@ public class Wall : MonoBehaviour
     {
        if (collider.tag == "Axe")
        {
-            var axeRigidbody = collider.gameObject.GetComponent<Rigidbody>();
-
-            Damage(axeRigidbody.velocity.magnitude);
-           
+            Damage(collider.gameObject.GetComponent<Axe>().speed);
        }
     }
 
     private void Damage(float axeSpeed)
     {
+        Debug.Log(axeSpeed);
+
         if (HealthLevel > 1)
         {
-            if (axeSpeed >= 0f)
+            if (axeSpeed >= 0.02f)
             {
-                Debug.Log("Damage " + axeSpeed);
-
                 HealthLevel -= 1;
-                Debug.Log(HealthLevel);
 
                 GetComponent<MeshRenderer>().material = Resources.Load("breakableWall_" + HealthLevel) as Material;
             }    
-        } else
+        }
+        else
         {
             gameObject.SetActive(false);
             WallParticles.GetComponent<ParticleSystem>().Play();
