@@ -4,6 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum EKeyPadKey
+{
+    Key0,
+    Key1,
+    Key2,
+    Key3,
+    Key4,
+    Key5,
+    Key6,
+    Key7,
+    Key8,
+    Key9,
+    KeyDelete,
+    KeyEnter,
+}
 public class Bomb : MonoBehaviour {
 
     public float TimeTillExplosion;
@@ -57,31 +72,52 @@ public class Bomb : MonoBehaviour {
                 // Verloren
             }
         }
+    }
 
-        if (Input.GetKeyUp(KeyCode.Keypad0))
-            InputNum(0);
-        if (Input.GetKeyUp(KeyCode.Keypad1))
-            InputNum(1);
-        if (Input.GetKeyUp(KeyCode.Keypad2))
-            InputNum(2);
-        if (Input.GetKeyUp(KeyCode.Keypad3))
-            InputNum(3);
-        if (Input.GetKeyUp(KeyCode.Keypad4))
-            InputNum(4);
-        if (Input.GetKeyUp(KeyCode.Keypad5))
-            InputNum(5);
-        if (Input.GetKeyUp(KeyCode.Keypad6))
-            InputNum(6);
-        if (Input.GetKeyUp(KeyCode.Keypad7))
-            InputNum(7);
-        if (Input.GetKeyUp(KeyCode.Keypad8))
-            InputNum(8);
-        if (Input.GetKeyUp(KeyCode.Keypad9))
-            InputNum(9);
-        if (Input.GetKeyUp(KeyCode.KeypadEnter) || Input.GetKeyUp(KeyCode.Return))
-            KeypadEnter();
-        if (Input.GetKeyUp(KeyCode.KeypadMinus))
-            KeypadDel();
+    public void OnKeyPress(EKeyPadKey key)
+    {
+        switch (key)
+        {
+            case EKeyPadKey.Key0:
+                InputNum(0);
+                break;
+            case EKeyPadKey.Key1:
+                InputNum(1);
+                break;
+            case EKeyPadKey.Key2:
+                InputNum(2);
+                break;
+            case EKeyPadKey.Key3:
+                InputNum(3);
+                break;
+            case EKeyPadKey.Key4:
+                InputNum(4);
+                break;
+            case EKeyPadKey.Key5:
+                InputNum(5);
+                break;
+            case EKeyPadKey.Key6:
+                InputNum(6);
+                break;
+            case EKeyPadKey.Key7:
+                InputNum(7);
+                break;
+            case EKeyPadKey.Key8:
+                InputNum(8);
+                break;
+            case EKeyPadKey.Key9:
+                InputNum(9);
+                break;
+            case EKeyPadKey.KeyEnter:
+                KeypadEnter();
+                break;
+            case EKeyPadKey.KeyDelete:
+                KeypadDel();
+                break;
+
+            default:
+                throw new NotImplementedException();
+        }
     }
 
     private void InterruptTimer()
@@ -94,13 +130,13 @@ public class Bomb : MonoBehaviour {
         interrupted = false;
     }
 
-    public void InputNum(int num)
+    private void InputNum(int num)
     {
         numInput = numInput * 10 + num;
         KeypadLabel.text = numInput.ToString();
     }
 
-    public void KeypadEnter()
+    private void KeypadEnter()
     {
         KeypadLabel.text = KeypadBlank;
         switch (numInput)
