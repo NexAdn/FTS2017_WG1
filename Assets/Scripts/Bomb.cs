@@ -10,6 +10,7 @@ public class Bomb : MonoBehaviour {
     public float TimePunishment;
     public Text TimerLabel;
     public Text KeypadLabel;
+    public String KeypadBlank;
 
     public GameObject LampA;
     private Material MatA;
@@ -31,7 +32,7 @@ public class Bomb : MonoBehaviour {
         MatB = LampB.GetComponent<Renderer>().material;
         MatC = LampC.GetComponent<Renderer>().material;
         MatD = LampD.GetComponent<Renderer>().material;
-
+        KeypadLabel.text = KeypadBlank;
     }
 
     // Update is called once per frame
@@ -79,7 +80,7 @@ public class Bomb : MonoBehaviour {
             InputNum(9);
         if (Input.GetKeyUp(KeyCode.KeypadEnter) || Input.GetKeyUp(KeyCode.Return))
             KeypadEnter();
-        if (Input.GetKeyUp(KeyCode.Delete))
+        if (Input.GetKeyUp(KeyCode.KeypadMinus))
             KeypadDel();
     }
 
@@ -101,7 +102,7 @@ public class Bomb : MonoBehaviour {
 
     public void KeypadEnter()
     {
-        KeypadLabel.text = "";
+        KeypadLabel.text = KeypadBlank;
         switch (numInput)
         {
             case 351://Leuchtfarbe
@@ -131,6 +132,8 @@ public class Bomb : MonoBehaviour {
     {
         numInput = (numInput - numInput % 10)/10;
         KeypadLabel.text = numInput.ToString();
+        if (numInput == 0)
+            KeypadLabel.text = KeypadBlank;
     }
 
     void UpdateLamps()
