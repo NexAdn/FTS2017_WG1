@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class UI_Keyboard : MonoBehaviour
+public class Lightswitch : MonoBehaviour
 {
     //private InputField input;
 
