@@ -5,13 +5,13 @@ using UnityEngine;
 public class ExtinguishFire : MonoBehaviour {
 
     public float Timer = 3f;
-    public GameObject flame;
-    public GameObject fireMain;
+    public GameObject FireMain;
+    public GameObject CodePlane;
 
 	// Use this for initialization
 	void Start () {
-        Debug.Log("init");
-	}
+        CodePlane.SetActive(false);
+    }
 
     // Update is called once per frame
     /*void Update () {
@@ -22,16 +22,30 @@ public class ExtinguishFire : MonoBehaviour {
 
     public void OnTriggerStay (Collider coll)
     {
-        if (coll.gameObject == flame)
+        /*foreach (GameObject o in coll.gameObject.GetComponents<GameObject>())
         {
+            if (coll.gameObject == o)
+            {
+                Timer -= Time.deltaTime;
+            }
+            if (Timer <= 0)
+            {
+                o.GetComponent<ParticleSystem>().Stop();
+                o.GetComponentsInChildren<ParticleSystem>()[0].Stop();
+            }
+        }*/
+        if (coll.gameObject == FireMain)
+        {
+            Debug.Log(Timer.ToString());
             Timer -= Time.deltaTime;
-            Debug.Log(Timer);
-        }
-
-        if (Timer <= 0)
-        {
-            flame.GetComponent<ParticleSystem>().Stop();
-            fireMain.GetComponent<ParticleSystem>().Stop();
+            if (Timer <= 0)
+            {
+                foreach (ParticleSystem s in coll.gameObject.GetComponentsInChildren<ParticleSystem>())
+                {
+                    s.Stop();
+                }
+                CodePlane.SetActive(true);
+            }
         }
     }
 }
