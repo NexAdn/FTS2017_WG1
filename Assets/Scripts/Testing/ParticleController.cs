@@ -35,13 +35,13 @@ public class ParticleController : MonoBehaviour
         {
             //particleObject.SetActive(true);
             particleObject.GetComponent<ParticleSystem>().Play();
-            particleObject.GetComponent<Collider>().enabled = false;
+            particleObject.GetComponent<Collider>().enabled = true;
         }
         else
         {
             particleObject.GetComponent<ParticleSystem>().Stop();
             //particleObject.SetActive(false);
-            particleObject.GetComponent<Collider>().enabled = true;
+            particleObject.GetComponent<Collider>().enabled = false;
         }
     }
 }
