@@ -28,4 +28,20 @@ public class ParticleController : MonoBehaviour
             particleObject.SetActive(false);
         }
     }
+
+    public void ToggleParticle(bool isOn)
+    {
+        if (isOn)
+        {
+            //particleObject.SetActive(true);
+            particleObject.GetComponent<ParticleSystem>().Play();
+            particleObject.GetComponent<Collider>().enabled = false;
+        }
+        else
+        {
+            particleObject.GetComponent<ParticleSystem>().Stop();
+            //particleObject.SetActive(false);
+            particleObject.GetComponent<Collider>().enabled = true;
+        }
+    }
 }
