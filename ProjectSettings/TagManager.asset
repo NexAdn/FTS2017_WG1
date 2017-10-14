@@ -9,6 +9,7 @@ TagManager:
   - TeleportIgnore
   - BreakWall
   - Axe
+  - Controller
   layers:
   - Default
   - TransparentFX
