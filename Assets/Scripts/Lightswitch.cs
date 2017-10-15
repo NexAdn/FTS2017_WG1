@@ -7,11 +7,12 @@ public class Lightswitch : MonoBehaviour
 
     public GameObject TopWallText;
     public GameObject RoomLight;
-    public void Enter()
+    public void ToggleLight()
     {
         //input.text = "";
         TopWallText.SetActive(!TopWallText.activeSelf);
         RoomLight.SetActive(!TopWallText.activeSelf);
+        GetComponent<AudioSource>().Play();
     }
 
     private void Start()
@@ -23,7 +24,7 @@ public class Lightswitch : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.KeypadEnter) || Input.GetKeyUp(KeyCode.Return))
         {
-            Enter();
+            ToggleLight();
         }
     }
 
@@ -31,7 +32,7 @@ public class Lightswitch : MonoBehaviour
     {
         if (other.gameObject.name == "Body")
         {
-            Enter();
+            ToggleLight();
         }
         
     }
