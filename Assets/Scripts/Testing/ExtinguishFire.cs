@@ -44,6 +44,10 @@ public class ExtinguishFire : MonoBehaviour {
                 {
                     s.Stop();
                 }
+                foreach (AudioSource s in coll.GetComponentsInChildren<AudioSource>())
+                {
+                    s.Stop();
+                }
                 CodePlane.SetActive(true);
             }
         }
