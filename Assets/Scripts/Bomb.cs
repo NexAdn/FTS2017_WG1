@@ -73,6 +73,7 @@ public class Bomb : MonoBehaviour {
             {
                 TimerLabel.text = "00:00";
                 InterruptTimer();
+                Time.timeScale = 0;
                 LoseScreen.SetActive(true);
                 // Verloren
             }
