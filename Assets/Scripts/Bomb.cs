@@ -19,7 +19,8 @@ public enum EKeyPadKey
     KeyDelete,
     KeyEnter,
 }
-public class Bomb : MonoBehaviour {
+public class Bomb : MonoBehaviour
+{
 
     public GameObject WinScreen;
     public GameObject LoseScreen;
@@ -27,7 +28,9 @@ public class Bomb : MonoBehaviour {
 
     public float TimeTillExplosion;
     public float TimePunishment;
+    public GameObject TimerDisplay;
     public Text TimerLabel;
+    public GameObject Keypad;
     public Text KeypadLabel;
     public String KeypadBlank;
 
@@ -42,11 +45,14 @@ public class Bomb : MonoBehaviour {
 
 
     private bool interrupted = false;
+    private bool audioFirstStop = true;
     private int numInput = 0;
     private int activatedCodes = 0x0;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
+        // Status lamps
         MatA = LampA.GetComponent<Renderer>().material;
         MatB = LampB.GetComponent<Renderer>().material;
         MatC = LampC.GetComponent<Renderer>().material;
@@ -55,13 +61,18 @@ public class Bomb : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update ()
+    void Update()
     {
+        if (audioFirstStop)
+        {
+            TimerDisplay.GetComponent<AudioSource>().Play();
+            audioFirstStop = false;
+        }
         if (!interrupted)
         {
             TimeTillExplosion -= Time.deltaTime;
-            int seconds = (int)Math.Floor(TimeTillExplosion)%60;
-            int minutes = (int)(Math.Floor(TimeTillExplosion) - seconds)/60;
+            int seconds = (int)Math.Floor(TimeTillExplosion) % 60;
+            int minutes = (int)(Math.Floor(TimeTillExplosion) - seconds) / 60;
             TimerLabel.text = "";
             if (minutes < 10)
                 TimerLabel.text += "0";
@@ -74,13 +85,19 @@ public class Bomb : MonoBehaviour {
                 TimerLabel.text = "00:00";
                 InterruptTimer();
                 LoseScreen.SetActive(true);
+                GetComponent<AudioSource>().Play();
                 // Verloren
             }
+        }
+        else
+        {
+            TimerDisplay.GetComponent<AudioSource>().Stop();
         }
     }
 
     public void OnKeyPress(EKeyPadKey key)
     {
+        Keypad.GetComponent<AudioSource>().Play();
         switch (key)
         {
             case EKeyPadKey.Key0:
@@ -138,6 +155,9 @@ public class Bomb : MonoBehaviour {
     private void InputNum(int num)
     {
         numInput = numInput * 10 + num;
+        // OPTIONAL: Länge des Codes begrenzen
+        if (numInput > 999)
+            numInput = 999;
         KeypadLabel.text = numInput.ToString();
     }
 
@@ -146,6 +166,7 @@ public class Bomb : MonoBehaviour {
         KeypadLabel.text = KeypadBlank;
         switch (numInput)
         {
+            // CODES KONFIGURIEREN
             case 351://Leuchtfarbe
                 activatedCodes |= 0x01;
                 UpdateLamps();
@@ -171,7 +192,7 @@ public class Bomb : MonoBehaviour {
 
     void KeypadDel()
     {
-        numInput = (numInput - numInput % 10)/10;
+        numInput = (numInput - numInput % 10) / 10;
         KeypadLabel.text = numInput.ToString();
         if (numInput == 0)
             KeypadLabel.text = KeypadBlank;

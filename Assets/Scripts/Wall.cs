@@ -29,7 +29,7 @@ public class Wall : MonoBehaviour
         {
             gameObject.SetActive(false);
             WallParticles.GetComponent<ParticleSystem>().Play();
-           
+            GetComponentInChildren<AudioSource>().Play();
         }
     }
     
