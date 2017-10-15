@@ -156,9 +156,6 @@ public class Bomb : MonoBehaviour
     private void InputNum(int num)
     {
         numInput = numInput * 10 + num;
-        // OPTIONAL: Länge des Codes begrenzen
-        if (numInput > 999)
-            numInput = 999;
         KeypadLabel.text = numInput.ToString();
     }
 
